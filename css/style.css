@@ -132,3 +132,11 @@
 .intro-special{
     letter-spacing: 6px;
 }
+.intro-text{
+    width: 545px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.75;
+    margin-bottom: 63px;
+}
