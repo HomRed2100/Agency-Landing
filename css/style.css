@@ -93,6 +93,10 @@
 .menu-active{
     background-color: #FF3F40;
 }
+
+/* Main */
+/* Intro */
+
 .main-heading,
 .license-link{
     border: 0;
@@ -103,4 +107,28 @@
     padding: 0;
     position: absolute;
     width: 1px;
+}
+.intro-wrapper{
+    background-color: #F6F2F2;
+    display: block;
+    width: 100%;
+    padding: 102px 0 110px;
+}
+.intro{
+    width: 1249px;
+    display: flex;
+    margin: 0 auto;
+}
+.intro-heading{
+    font-style: normal;
+    font-weight: 800;
+    font-size: 60px;
+    line-height: 1.2;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 37px;
+}
+.intro-special{
+    letter-spacing: 6px;
 }
