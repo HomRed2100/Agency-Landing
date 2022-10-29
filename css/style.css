@@ -117,7 +117,11 @@
 .intro{
     width: 1249px;
     display: flex;
+    justify-content: space-between;
     margin: 0 auto;
+}
+.intro-info{
+    max-width: 595px;
 }
 .intro-heading{
     font-style: normal;
@@ -127,7 +131,8 @@
     letter-spacing: 1.5px;
     text-transform: uppercase;
     margin: 0;
-    margin-bottom: 37px;
+    margin-bottom: 19px;
+    margin-top: -15px;
 }
 .intro-special{
     letter-spacing: 6px;
@@ -139,7 +144,8 @@
     font-size: 16px;
     line-height: 1.75;
     margin: 0;
-    margin-bottom: 63px;
+    margin-bottom: 57px;
+
 }
 .intro-action{
     display: flex;
@@ -156,4 +162,10 @@
     min-height: 55px;
     border-radius: 5px;
     box-sizing: border-box;
+}
+.intro-video{
+    width: 551px;
+    height: 356px;
+    object-fit: cover;
+    box-shadow: -2.2px -13.8px 73px rgba(0, 0, 0, 0.25);
 }
