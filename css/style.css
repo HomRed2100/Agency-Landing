@@ -138,5 +138,22 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 1.75;
+    margin: 0;
     margin-bottom: 63px;
+}
+.intro-action{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.88;
+    color: #fff;
+    text-decoration: none;
+    background-color: #FF2D2D;
+    width: 227px;
+    min-height: 55px;
+    border-radius: 5px;
+    box-sizing: border-box;
 }
