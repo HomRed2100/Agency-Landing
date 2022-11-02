@@ -50,10 +50,17 @@
 /* Header */
 
 .page__inner{
+    display: block;
+    width: 100%;
+}
+.page__inner_intro{
     padding-top: 29px;
 }
 .page__inner_grey{
     background-color: #F6F2F2;
+}
+.page__inner_section{
+    padding: 102px 0 110px;
 }
 .page__header{
     margin: 0 auto;
@@ -101,8 +108,7 @@
 /* Main */
 /* Intro */
 
-.main-heading,
-.license-link{
+.intro__main-heading{
     border: 0;
     clip: rect(0 0 0 0);
     height: 1px;
@@ -112,11 +118,15 @@
     position: absolute;
     width: 1px;
 }
-.intro-wrapper{
-    background-color: #F6F2F2;
-    display: block;
-    width: 100%;
-    padding: 102px 0 110px;
+.intro__license-link{
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
 }
 .intro{
     width: 1249px;
@@ -124,10 +134,10 @@
     justify-content: space-between;
     margin: 0 auto;
 }
-.intro-info{
+.intro__info{
     max-width: 595px;
 }
-.intro-heading{
+.intro__heading{
     font-style: normal;
     font-weight: 800;
     font-size: 60px;
@@ -138,10 +148,10 @@
     margin-bottom: 19px;
     margin-top: -15px;
 }
-.intro-special{
+.intro__span_special{
     letter-spacing: 6px;
 }
-.intro-text{
+.intro__text{
     width: 545px;
     font-style: normal;
     font-weight: 400;
@@ -151,7 +161,7 @@
     margin-bottom: 57px;
 
 }
-.intro-action{
+.action-link{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -159,15 +169,17 @@
     font-weight: 700;
     font-size: 18px;
     line-height: 1.88;
-    color: #fff;
     text-decoration: none;
-    background-color: #FF2D2D;
     width: 227px;
     min-height: 55px;
     border-radius: 5px;
     box-sizing: border-box;
 }
-.intro-video{
+.action-link_red-full{
+    color: #fff;
+    background-color: #FF2D2D;
+}
+.intro__video{
     width: 551px;
     height: 356px;
     object-fit: cover;
