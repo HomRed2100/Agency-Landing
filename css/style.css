@@ -147,9 +147,11 @@
     margin: 0;
     margin-bottom: 19px;
     margin-top: -15px;
+    color: #000000;
 }
 .intro__span_special{
     letter-spacing: 6px;
+    color: #000000;
 }
 .intro__text{
     width: 545px;
@@ -159,6 +161,7 @@
     line-height: 1.75;
     margin: 0;
     margin-bottom: 57px;
+    color: #000000;
 
 }
 .action-link{
@@ -200,7 +203,7 @@
     width: 1249px;
     margin: 0 auto;
     justify-content: space-between;
-    padding: 107px 0 77px;
+    padding: 107px 0 55px;
     border-bottom: 2px solid #ececec;
 }
 .services__heading{
@@ -211,6 +214,7 @@
     line-height: 1.31;
     letter-spacing: 0.42px;
     text-transform: uppercase;
+    color: #000000;
     margin: 0;
     margin-top: -10px;
 }
@@ -221,6 +225,7 @@
     font-size: 16px;
     line-height: 1.75;
     margin: 32px 0 58px;
+    color: #000000;
 }
 .services__items{
     display: flex;
@@ -288,6 +293,7 @@
     font-size: 24px;
     line-height: 1.2;
     letter-spacing: 0.27px;
+    color: #000000;
 }
 .services__text-card{
     font-style: normal;
@@ -296,4 +302,91 @@
     line-height: 1.75;
     margin: 0;
     margin-bottom: -28px;
+    color: #000000;
+}
+
+/* Feature */
+
+.feature{
+
+}
+.feature__header{
+    width: 1249px;
+    margin: 0 auto;
+    padding: 98px 0 88px;
+    
+}
+.feature__heading{
+    text-align: center;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 0.38px;
+    text-transform: uppercase;
+    margin: 0;
+    margin-left: 27px;
+    color: #000000;
+
+}
+.feature__text{
+    margin: 16px auto 28px;
+    padding-left: 29px;
+    width: 537px;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.75;
+    color: #000000;
+}
+.feature__line{
+    width: 130px;
+    height: 2px;
+    background-color: #FF2D2D;
+    border: none;
+    margin: 0 auto;
+}
+.filter{
+    display: flex;
+    justify-content: center;
+    padding-left: 62px;
+    margin: 0;
+    margin-bottom: 58px;
+
+}
+.filter__list{
+    margin: 0;
+    padding: 0;
+    width: 912px;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 57px;
+
+}
+.filter__item{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 1.1;
+    letter-spacing: 0.22px;
+    text-transform: uppercase;
+    color: #000000;
+
+}
+.filter__link{
+    text-decoration: none;
+    color: #000000;
+}
+.filter__link_active{
+    color: #FF2D2D;
+}
+.filter__link:hover{
+    color: #FF2D2D;
+}
+.feature__products{
+
+}
+.feature__product{
+
 }
