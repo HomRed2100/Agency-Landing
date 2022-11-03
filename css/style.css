@@ -247,11 +247,11 @@
 .services__item_icon_manag::before{
     content: '';
     display: block;
-    width: 40px;
+    width: 41px;
     height: 41px;
     background-image: url(../img/manag.svg);
     background-repeat: no-repeat;
-    margin-bottom: 31px;
+    margin-bottom: 30px;
 }
 .services__item_icon_design::before{
     content: '';
@@ -269,7 +269,7 @@
     height: 36px;
     background-image: url(../img/logo.svg);
     background-repeat: no-repeat;
-    margin-bottom: 37px;
+    margin-bottom: 35px;
 }
 .services__item_icon_anim::before{
     content: '';
@@ -278,7 +278,7 @@
     height: 34px;
     background-image: url(../img/anim.svg);
     background-repeat: no-repeat;
-    margin-bottom: 41px;
+    margin-bottom: 35px;
 }
 .services__title{
     margin: 0;
