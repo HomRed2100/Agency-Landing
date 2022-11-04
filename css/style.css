@@ -401,3 +401,6 @@
 .feature__product_hidden{
     display: none;
 }
+.feature__product_visible{
+    display: block;
+}

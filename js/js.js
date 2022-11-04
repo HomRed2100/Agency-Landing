@@ -1,13 +1,98 @@
+let all = document.querySelector('.filter__link_all');
 let printTemplate = document.querySelector('.filter__link_print');
+let webTemplate = document.querySelector('.filter__link_web');
+let userInt = document.querySelector('.filter__link_user');
+let mockUp = document.querySelector('.filter__link_mock');
 
+let allItem = document.querySelectorAll('.feature__product');
 let printItem = document.querySelectorAll('.feature__product_print');
+let webItem = document.querySelectorAll('.feature__product_web');
+let userItem = document.querySelectorAll('.feature__product_user');
+let mockItem = document.querySelectorAll('.feature__product_mock');
 
-printTemplate.addEventListener('click', showItem);
+all.addEventListener('click', showAllItem);
+printTemplate.addEventListener('click', showPrintItem);
+webTemplate.addEventListener('click', showWebItem);
+userInt.addEventListener('click', showUserItem);
+mockUp.addEventListener('click', showMockItem);
 
-function showItem(evt){
+function showAllItem(evt){
     console.log(evt);
     evt.preventDefault();
     printItem.forEach(function(printItem){
+        printItem.classList.add('feature__product_visible');
+    });
+    webItem.forEach(function(webItem){
+        webItem.classList.add('feature__product_visible');
+    });
+    userItem.forEach(function(userItem){
+        userItem.classList.add('feature__product_visible');
+    });
+    mockItem.forEach(function(mockItem){
+        mockItem.classList.add('feature__product_visible');
+    });
+}
+function showPrintItem(evt){
+    console.log(evt);
+    evt.preventDefault();
+    // webItem.forEach(function(webItem){
+    //     webItem.classList.add('feature__product_visible');
+    // });
+    // userItem.forEach(function(userItem){
+    //     userItem.classList.add('feature__product_visible');
+    // });
+    allItem.forEach(function(allItem){
+        allItem.classList.add('feature__product_visible');
+    });
+    printItem.forEach(function(printItem){
         printItem.classList.add('feature__product_hidden');
-    })
+    });
+}
+function showWebItem(evt){
+    console.log(evt);
+    evt.preventDefault();
+    // printItem.forEach(function(printItem){
+    //     printItem.classList.add('feature__product_visible');
+    // });
+    // userItem.forEach(function(userItem){
+    //     userItem.classList.add('feature__product_visible');
+    // });
+    mockItem.forEach(function(mockItem){
+        mockItem.classList.add('feature__product_visible');
+    });
+    webItem.forEach(function(webItem){
+        webItem.classList.add('feature__product_hidden');
+    });
+}
+function showUserItem(evt){
+    console.log(evt);
+    evt.preventDefault();
+    // printItem.forEach(function(printItem){
+    //     printItem.classList.add('feature__product_visible');
+    // });
+    // webItem.forEach(function(webItem){
+    //     webItem.classList.add('feature__product_visible');
+    // });
+    mockItem.forEach(function(mockItem){
+        mockItem.classList.add('feature__product_visible');
+    });
+    userItem.forEach(function(userItem){
+        userItem.classList.add('feature__product_hidden');
+    });
+}
+function showMockItem(evt){
+    console.log(evt);
+    evt.preventDefault();
+    // printItem.forEach(function(printItem){
+    //     printItem.classList.add('feature__product_visible');
+    // });
+    // webItem.forEach(function(webItem){
+    //     webItem.classList.add('feature__product_visible');
+    // });
+    userItem.forEach(function(userItem){
+        userItem.classList.add('feature__product_visible');
+    });
+    mockItem.forEach(function(mockItem){
+        mockItem.classList.add('feature__product_hidden');
+    });
 }
