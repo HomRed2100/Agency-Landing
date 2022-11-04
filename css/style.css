@@ -311,9 +311,6 @@
 
 /* Feature */
 
-.feature{
-
-}
 .feature__header{
     margin: 0 auto;
     padding: 98px 0 88px;
@@ -400,4 +397,7 @@
 .feature__product{
     width: 297px;
     object-fit: cover;
+}
+.feature__product_1_hidden{
+    display: none;
 }
