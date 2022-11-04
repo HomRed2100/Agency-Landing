@@ -35,64 +35,28 @@ function showAllItem(evt){
 function showPrintItem(evt){
     console.log(evt);
     evt.preventDefault();
-    // webItem.forEach(function(webItem){
-    //     webItem.classList.add('feature__product_visible');
-    // });
-    // userItem.forEach(function(userItem){
-    //     userItem.classList.add('feature__product_visible');
-    // });
-    allItem.forEach(function(allItem){
-        allItem.classList.add('feature__product_visible');
-    });
     printItem.forEach(function(printItem){
-        printItem.classList.add('feature__product_hidden');
+        printItem.classList.toggle('feature__product_hidden');
     });
 }
 function showWebItem(evt){
     console.log(evt);
     evt.preventDefault();
-    // printItem.forEach(function(printItem){
-    //     printItem.classList.add('feature__product_visible');
-    // });
-    // userItem.forEach(function(userItem){
-    //     userItem.classList.add('feature__product_visible');
-    // });
-    mockItem.forEach(function(mockItem){
-        mockItem.classList.add('feature__product_visible');
-    });
     webItem.forEach(function(webItem){
-        webItem.classList.add('feature__product_hidden');
+        webItem.classList.toggle('feature__product_hidden');
     });
 }
 function showUserItem(evt){
     console.log(evt);
     evt.preventDefault();
-    // printItem.forEach(function(printItem){
-    //     printItem.classList.add('feature__product_visible');
-    // });
-    // webItem.forEach(function(webItem){
-    //     webItem.classList.add('feature__product_visible');
-    // });
-    mockItem.forEach(function(mockItem){
-        mockItem.classList.add('feature__product_visible');
-    });
     userItem.forEach(function(userItem){
-        userItem.classList.add('feature__product_hidden');
+        userItem.classList.toggle('feature__product_hidden');
     });
 }
 function showMockItem(evt){
     console.log(evt);
     evt.preventDefault();
-    // printItem.forEach(function(printItem){
-    //     printItem.classList.add('feature__product_visible');
-    // });
-    // webItem.forEach(function(webItem){
-    //     webItem.classList.add('feature__product_visible');
-    // });
-    userItem.forEach(function(userItem){
-        userItem.classList.add('feature__product_visible');
-    });
     mockItem.forEach(function(mockItem){
-        mockItem.classList.add('feature__product_hidden');
+        mockItem.classList.toggle('feature__product_hidden');
     });
 }

@@ -383,7 +383,8 @@
 .filter__link_active{
     color: #FF2D2D;
 }
-.filter__link:hover{
+.filter__link:hover,
+.filter__link:focus{
     color: #FF2D2D;
 }
 .feature__products{
@@ -398,6 +399,7 @@
     width: 297px;
     object-fit: cover;
 }
+
 .feature__product_hidden{
     display: none;
 }
