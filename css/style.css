@@ -81,6 +81,8 @@
     list-style: none;
     margin: 0;
     padding: 0;
+    justify-content: space-between;
+    margin-left: -20px;
 }
 .menu__item{
     display: flex;
@@ -97,6 +99,7 @@
     font-weight: 700;
     font-size: 14px;
     line-height: 1.7;
+    padding-top: 8px;
 }
 .menu__link:hover{
     background-color: #FF3F40;
@@ -106,6 +109,7 @@
 }
 
 /* Main */
+
 /* Intro */
 
 .intro__main-heading{
@@ -311,7 +315,6 @@
 
 }
 .feature__header{
-    width: 1249px;
     margin: 0 auto;
     padding: 98px 0 88px;
     
@@ -345,6 +348,8 @@
     background-color: #FF2D2D;
     border: none;
     margin: 0 auto;
+    position: relative;
+    left: 13px;
 }
 .filter{
     display: flex;
@@ -385,8 +390,14 @@
     color: #FF2D2D;
 }
 .feature__products{
+    width: 1249px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    gap: 20px;
 
 }
 .feature__product{
-
+    width: 297px;
+    object-fit: cover;
 }
