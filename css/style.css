@@ -398,6 +398,6 @@
     width: 297px;
     object-fit: cover;
 }
-.feature__product_1_hidden{
+.feature__product_hidden{
     display: none;
 }

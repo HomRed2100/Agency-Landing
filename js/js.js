@@ -1,11 +1,13 @@
 let printTemplate = document.querySelector('.filter__link_print');
-let printItem = document.querySelector('.feature__product_1');
+
+let printItem = document.querySelectorAll('.feature__product_print');
 
 printTemplate.addEventListener('click', showItem);
 
 function showItem(evt){
     console.log(evt);
     evt.preventDefault();
-    printItem.classList.toggle('feature__product_1_hidden');
+    printItem.forEach(function(printItem){
+        printItem.classList.add('feature__product_hidden');
+    })
 }
-
