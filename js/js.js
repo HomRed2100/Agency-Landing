@@ -20,7 +20,7 @@ function showAllItem(evt){
     console.log(evt);
     evt.preventDefault();
     allItem.forEach(function(allItem){
-        allItem.classList.toggle('feature__product_visible');
+        allItem.classList.add('feature__product_visible');
     });
 }
 function showPrintItem(evt){
@@ -29,6 +29,8 @@ function showPrintItem(evt){
     printItem.forEach(function(printItem){
         printItem.classList.toggle('feature__product_hidden');
     });
+    all.classList.toggle('filter__link_black');
+    printTemplate.classList.toggle('filter__link_red');
 }
 function showWebItem(evt){
     console.log(evt);
@@ -36,6 +38,8 @@ function showWebItem(evt){
     webItem.forEach(function(webItem){
         webItem.classList.toggle('feature__product_hidden');
     });
+    all.classList.toggle('filter__link_black');
+    webTemplate.classList.toggle('filter__link_red');
 }
 function showUserItem(evt){
     console.log(evt);
@@ -43,6 +47,8 @@ function showUserItem(evt){
     userItem.forEach(function(userItem){
         userItem.classList.toggle('feature__product_hidden');
     });
+    all.classList.toggle('filter__link_black');
+    userInt.classList.toggle('filter__link_red');
 }
 function showMockItem(evt){
     console.log(evt);
@@ -50,4 +56,6 @@ function showMockItem(evt){
     mockItem.forEach(function(mockItem){
         mockItem.classList.toggle('feature__product_hidden');
     });
+    all.classList.toggle('filter__link_black');
+    mockUp.classList.toggle('filter__link_red');
 }

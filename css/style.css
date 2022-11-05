@@ -383,8 +383,7 @@
 .filter__link_active{
     color: #FF2D2D;
 }
-.filter__link:hover,
-.filter__link:focus{
+.filter__link:hover{
     color: #FF2D2D;
 }
 .feature__products{
@@ -405,4 +404,10 @@
 }
 .feature__product_visible{
     display: block;
+}
+.filter__link_black{
+    color: #000000;
+}
+.filter__link_red{
+    color: #FF2D2D;
 }
