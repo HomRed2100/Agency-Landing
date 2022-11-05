@@ -19,17 +19,8 @@ mockUp.addEventListener('click', showMockItem);
 function showAllItem(evt){
     console.log(evt);
     evt.preventDefault();
-    printItem.forEach(function(printItem){
-        printItem.classList.add('feature__product_visible');
-    });
-    webItem.forEach(function(webItem){
-        webItem.classList.add('feature__product_visible');
-    });
-    userItem.forEach(function(userItem){
-        userItem.classList.add('feature__product_visible');
-    });
-    mockItem.forEach(function(mockItem){
-        mockItem.classList.add('feature__product_visible');
+    allItem.forEach(function(allItem){
+        allItem.classList.toggle('feature__product_visible');
     });
 }
 function showPrintItem(evt){
