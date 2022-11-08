@@ -468,6 +468,11 @@
     object-fit: contain;
     object-position: bottom;
 }
+.team-inner{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
 .team__leader-name{
     font-style: normal;
     font-weight: 600;
@@ -505,9 +510,33 @@
     color: #000000;
 
 }
+.team__others{
+    display: flex;
+    flex-wrap: wrap;
+}
+.team__other{
+    position: relative;
+}
+
 .team__profile{
     background-color: #FF3F40;
     object-fit: contain;
     object-position: bottom;
 
+}
+.team__other-name{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: 0.16px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    padding: 10px 0;
 }
