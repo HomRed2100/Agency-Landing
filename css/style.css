@@ -456,8 +456,6 @@
     left: 4px;
 }
 .team__members{
-    display: flex;
-    align-items: flex-start;
     display: grid;
     grid-template-columns: repeat(2, auto);
     grid-template-rows: repeat(2, auto);
@@ -470,25 +468,16 @@
     grid-column: 1 / 2;
     grid-row: 1 / 3;
 }
-.team__inner{
-    display: flex;
-    flex-direction: column;
-}
-@supports (display: contents){
-    .team__inner{
-        display: contents;
-    }
-}
 .team__leader-about{
     grid-column: 2 / 3;
     grid-row: 1 / 2;
-    padding: 10px 3px;
+    padding: 10px 3px 0;
 
 }
 .team__leader-name{
     font-style: normal;
     font-weight: 600;
-    font-size: 30.127px;
+    font-size: 30px;
     letter-spacing: 0.27px;
     text-transform: uppercase;
     color: #000000;
@@ -497,10 +486,9 @@
     width: 657px;
     font-style: normal;
     font-weight: 400;
-    font-size: 15.9953px;
+    font-size: 16px;
     line-height: 1.75;
     color: #000000;
-
 }
 .team__leader-social{
     display: flex;
@@ -511,7 +499,6 @@
     margin: 0;
     padding: 0;
     padding-top: 27px;
-    margin-bottom: -11px;
 }
 .team__social-list{
     font-style: italic;
@@ -530,16 +517,17 @@
 }
 .team__others{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     column-gap: 20px;
     flex-wrap: wrap;
     grid-column: 2 / 3;
     grid-row: 2 / 3;
+    align-items: end;
+
 }
 .team__other{
     position: relative;
     display: flex;
-    
 }
 .team__profile{
     background-color: #FF3F40;
