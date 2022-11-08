@@ -314,10 +314,12 @@
 
 /* Feature */
 
+.feature{
+    padding: 98px 0 88px;
+}
+
 .feature__header{
     margin: 0 auto;
-    padding: 98px 0 88px;
-    
 }
 .feature__heading{
     text-align: center;
@@ -361,8 +363,8 @@
     justify-content: center;
     padding-left: 62px;
     margin: 0;
+    margin-top: 88px;
     margin-bottom: 58px;
-
 }
 .filter__list{
     margin: 0;
@@ -423,21 +425,27 @@
 /* Team */
 
 .team{
+    margin: 0 auto;
+    width: 1249px;
+    padding: 5px 0 88px;
 
 }
 .team__header{
+ 
 
 }
 .team__heading{
+    margin-bottom: 22px;
     font-style: normal;
     font-weight: 700;
     font-size: 42px;
-    line-height: 0px;
     letter-spacing: 0.38px;
     text-transform: uppercase;
-    color: #00000
+    color: #000000;
 }
 .team__text{
+    margin: 0;
+    margin-bottom: 32px;
     width: 460px;
     font-style: normal;
     font-weight: 400;
@@ -447,11 +455,18 @@
 }
 .line__left{
     margin: 0;
+    margin-bottom: 70px;
+    position: relative;
+    left: 4px;
+}
+.team__members{
+    display: flex;
+    align-items: flex-start;
 }
 .team__leader{
     background-color: #FF3F40;
-    height: auto;
-    padding: 136px 0 0;
+    object-fit: contain;
+    object-position: bottom;
 }
 .team__leader-name{
     font-style: normal;
@@ -468,5 +483,31 @@
     font-size: 15.9953px;
     line-height: 1.75;
     color: #000000;
+
+}
+.team__leader-social{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.team__social-list{
+    font-style: italic;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.33;
+    letter-spacing: 0.9px;
+    color: #000000;
+}
+.team__social-link{
+    text-decoration: none;
+    color: #000000;
+
+}
+.team__profile{
+    background-color: #FF3F40;
+    object-fit: contain;
+    object-position: bottom;
 
 }
