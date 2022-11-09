@@ -543,6 +543,7 @@
     object-position: bottom;
 
 }
+
 .team__other-name{
     display: none;
     position: absolute;
@@ -562,7 +563,7 @@
 }
 .team__other:hover > .team__other-name{
     display: block;
-    animation: name 0.4s ease-in-out;
+    animation: name 0.4s ease-out;
 }
 
 @keyframes name {
