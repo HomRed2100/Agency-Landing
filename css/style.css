@@ -731,3 +731,17 @@
     resize: none;
     padding: 31px 0 199px 51px;
 }
+.feedback__button{
+    width: 728px;
+    min-height: 72px;
+    border: none;
+    border-radius: 5px;
+    background-color: #FF3B3B;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.89;
+    letter-spacing: 0.3px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
