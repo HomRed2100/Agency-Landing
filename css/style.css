@@ -701,7 +701,9 @@
     position: relative;
     left: 0px;
 }
-.feedback__form{}
+.feedback__form{
+    position: relative;
+}
 .feedback__name{
     width: 339px;
     min-height: 69px;
@@ -710,6 +712,8 @@
     border-radius: 5px;
     padding: 23px 0 23px 54px;
     box-sizing: border-box;
+    margin-right: 54px;
+    margin-bottom: 46px;
 }
 .feedback__email{
     width: 339px;
@@ -719,6 +723,7 @@
     border-radius: 5px;
     padding: 23px 0 23px 48px;
     box-sizing: border-box;
+    margin-bottom: 46px;
 }
 
 .feedback__message{
@@ -729,7 +734,45 @@
     width: 731px;
     height: 249px;
     resize: none;
-    padding: 31px 0 199px 51px;
+    padding: 31px 51px; 
+    margin-bottom: 45px;
+}
+.feedback__label_name{
+    font-size: 18px;
+    line-height: 1.88;
+    letter-spacing: 0.3px;
+    font-style: normal;
+    font-weight: 400;
+    color: #000000;
+    position: absolute;
+    top: 29px;
+    left: 36px;
+    z-index: 1;
+    transition: 0.3s;
+}
+.feedback__label_email{
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.75;
+    color: #000000;
+    position: absolute;
+    top: 29px;
+    left: 436px;
+    z-index: 1;
+    transition: 0.3s;
+}
+.feedback__label_message{
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.75;
+    color: #000000;
+    position: absolute;
+    top: 129px;
+    left: 36px;
+    z-index: 1;
+    transition: 0.3s;
 }
 .feedback__button{
     width: 728px;
@@ -744,4 +787,13 @@
     letter-spacing: 0.3px;
     text-transform: uppercase;
     color: #FFFFFF;
+}
+.feedback__name:focus ~ .feedback__label_name{
+    display: none;
+}
+.feedback__email:focus ~ .feedback__label_email{
+    display: none;
+}
+.feedback__message:focus ~ .feedback__label_message{
+    display: none;
 }

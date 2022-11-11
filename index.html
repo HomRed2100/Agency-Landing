@@ -153,9 +153,12 @@
         </div>
         <div class="feedback__body">
             <form class="feedback__form" action="#" method="get">
-                <input class="feedback__name" type="text" placeholder="Name" name="name">
-                <input class="feedback__email" type="email" id="feedback__email" placeholder="Your Mail">
-                <textarea class="feedback__message" name="message" id="message" placeholder="Type your message"></textarea>
+                <input class="feedback__name" type="text" name="name" id="feedback__name">
+                <label class="feedback__label_name" for="feedback__name">Name</label>
+                <input class="feedback__email" type="email" id="feedback__email">
+                <label class="feedback__label_email" for="feedback__email">Your Mail</label>
+                <textarea class="feedback__message" name="message" id="message"></textarea>
+                <label class="feedback__label_message" for="message">Type your message</label>
                 <button class="feedback__button" type="submit">Send message</button>
             </form>
         </div>
