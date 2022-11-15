@@ -154,12 +154,18 @@
 
             <div class="feedback__body">
                 <form class="feedback__form" action="#" method="get">
-                    <input class="feedback__name" type="text" name="name" id="feedback__name">
-                    <label class="feedback__label_name" for="feedback__name">Name</label>
-                    <input class="feedback__email" type="email" id="feedback__email" name="email">
-                    <label class="feedback__label_email" for="feedback__email">Your Mail</label>
-                    <textarea class="feedback__message" name="message" id="message"></textarea>
-                    <label class="feedback__label_message" for="message">Type your message</label>
+                    <div class="feedback__block-1">
+                        <input class="feedback__name" type="text" name="name" id="feedback__name">
+                        <label class="feedback__label_name" for="feedback__name">Name</label>
+                    </div>
+                    <div class="feedback__block-2">
+                        <input class="feedback__email" type="email" id="feedback__email" name="email">
+                        <label class="feedback__label_email" for="feedback__email">Your Mail</label>
+                    </div>
+                    <div class="feedback__block-3">
+                        <textarea class="feedback__message" name="message" id="message"></textarea>
+                        <label class="feedback__label_message" for="message">Type your message</label>
+                    </div>
                     <button class="feedback__button" type="submit">Send message</button>
                 </form>
             

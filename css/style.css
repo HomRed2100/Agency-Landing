@@ -707,8 +707,16 @@
     column-gap: 105px;
 }
 .feedback__form{
-    position: relative;
     width: 731px;
+}
+.feedback__block-1{
+    position: relative;
+}
+.feedback__block-2{
+    position: relative;
+}
+.feedback__block-3{
+    position: relative;
 }
 .feedback__name{
     width: 339px;
@@ -764,7 +772,7 @@
     color: #000000;
     position: absolute;
     top: 21px;
-    left: 440px;
+    left: 52px;
     z-index: 1;
     transition: 0.3s;
 }
@@ -775,7 +783,7 @@
     line-height: 1.75;
     color: #000000;
     position: absolute;
-    top: 142px;
+    top: 21px;
     left: 51px;
     z-index: 1;
     transition: 0.3s;
