@@ -79,13 +79,14 @@
 .header{
     display: flex;
     justify-content: center;
-    width: 1249px;
+    max-width: 1249px;
     min-height: 89px;
     background-color: rgba(0, 0, 0, 0.8);
 }
 .menu{
     margin-left: -30px;
 }
+
 .menu__list{
     display: flex;
     flex-wrap: wrap;
@@ -94,6 +95,14 @@
     padding: 0;
     justify-content: space-between;
     margin-left: -20px;
+}
+@media screen and (max-width: 600px) {
+    .menu{
+        margin-left: 30px;
+    }
+    .menu__list{
+        justify-content: center;
+    }
 }
 .menu__item{
     display: flex;
@@ -144,8 +153,9 @@
     width: 1px;
 }
 .intro{
-    width: 1249px;
+    max-width: 1249px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin: 0 auto;
 }
@@ -169,7 +179,7 @@
     color: #000000;
 }
 .intro__text{
-    width: 545px;
+    max-width: 545px;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -205,17 +215,36 @@
     border: 2px solid #FF2D2D;
 }
 .intro__video{
-    width: 551px;
+    max-width: 551px;
     height: 356px;
+    width: 100%;
     object-fit: cover;
     box-shadow: -2.2px -13.8px 73px rgba(0, 0, 0, 0.29);
+}
+@media screen and (max-width: 1280px) {
+    .intro{
+        padding: 0 2vw;
+        box-sizing: border-box;
+    }
+    .intro__heading{
+        font-size: 40px;
+    }
+    .intro__span_special{
+        letter-spacing: 1.5px;
+    }
+    .action-link{
+        margin-bottom: 60px;
+    }
+    .intro__video{
+        height: auto;
+    }
 }
 
 /* Services */
 
 .services{
     display: flex;
-    width: 1249px;
+    max-width: 1249px;
     margin: 0 auto;
     justify-content: space-between;
     padding: 107px 0 55px;
@@ -405,7 +434,7 @@
     color: #FF2D2D;
 }
 .feature__products{
-    width: 1249px;
+    max-width: 1249px;
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
@@ -434,7 +463,7 @@
 
 .team{
     margin: 0 auto;
-    width: 1249px;
+    max-width: 1249px;
     padding: 5px 0 88px;
 
 }
@@ -588,7 +617,7 @@
 
 }
 .subscribe{
-    width: 1249px;
+    max-width: 1249px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -670,7 +699,7 @@
 
 .feedback{
     margin: 0 auto;
-    width: 1249px;
+    max-width: 1249px;
     padding: 104px 0 109px;
 }
 .feedback__heading{
@@ -873,7 +902,7 @@
 .footer{
     padding-top: 9px;
     min-height: 111px;
-    width: 1249px;
+    max-width: 1249px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
