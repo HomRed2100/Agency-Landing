@@ -373,7 +373,7 @@
 .feature__text{
     margin: 16px auto 28px;
     padding-left: 29px;
-    width: 537px;
+    max-width: 537px;
     text-align: center;
     font-size: 16px;
     font-style: normal;
@@ -444,6 +444,7 @@
 .feature__product{
     width: 297px;
     object-fit: cover;
+    flex: 1 1;
 }
 
 .feature__product_hidden{
@@ -457,6 +458,28 @@
 }
 .filter__link_red{
     color: #FF2D2D;
+}
+@media screen and (max-width: 1248px){
+    .feature{
+        padding: 98px 2vw 88px
+    }
+    .feature__heading{
+        margin-left: 0;
+    }
+    .feature__text{
+        padding-left: 0;
+    }
+    .filter{
+        padding-left: 0;
+    }
+    .line__center{
+        left: 0;
+    }
+}
+@media screen and (max-width: 1000px){
+    .filter__list{
+        justify-content: center;
+    }
 }
 
 /* Team */
