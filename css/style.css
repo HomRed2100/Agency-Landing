@@ -247,14 +247,16 @@
 
 .services{
     display: flex;
+    flex-wrap: wrap;
     max-width: 1249px;
     margin: 0 auto;
     justify-content: space-between;
     padding: 107px 0 55px;
     border-bottom: 2px solid #ececec;
+    box-sizing: border-box;
 }
 .services__heading{
-    width: 523px;
+    max-width: 523px;
     font-style: normal;
     font-weight: 700;
     font-size: 42px;
@@ -266,7 +268,7 @@
     margin-top: -10px;
 }
 .services__text{
-    width: 539px;
+    max-width: 539px;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -279,22 +281,22 @@
     flex-wrap: wrap;
     justify-content: end; 
     gap: 19px;
-    width: 610px;
+    max-width: 610px;
 }
 .services__item{
     margin-bottom: 53px;
 }
 .services__item_icon_manag{
-    width: 301px;
+    max-width: 301px;
 }
 .services__item_icon_design{
-    width: 288px;
+    max-width: 288px;
 }
 .services__item_icon_logo{
-    width: 301px;
+    max-width: 301px;
 }
 .services__item_icon_anim{
-    width: 290px;
+    max-width: 290px;
 }
 .services__item_icon_manag::before{
     content: '';
@@ -351,7 +353,16 @@
     margin-bottom: -28px;
     color: #000000;
 }
-
+@media screen and (max-width: 1270px) {
+    .services{
+        padding: 107px 2vw 55px;
+    }
+}
+@media screen and (max-width: 635px) {
+    .services__items{
+        justify-content: start; 
+    }
+}
 /* Feature */
 
 .feature{
@@ -742,7 +753,7 @@
     border: 0;
     border-radius: 5px;
     box-sizing: border-box;
-    padding: 29px 333px 26px 36px;
+    padding: 29px 0 26px 36px;
 }
 .subscribe__label{
     font-size: 16px;
@@ -779,7 +790,35 @@
     box-sizing: border-box;
     cursor: pointer;
 }
-
+@media screen and (max-width: 1115px) {
+    .subscribe__form{
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+    .subscribe__heading{
+        text-align: center;
+        line-height: 1.2;
+    }
+    .subscribe__button{
+        margin-left: 0;
+        
+    }
+}
+@media screen and (max-width: 790px) {
+    .subscribe{
+        padding: 0 2vw;
+    }
+    .subscribe__text{
+        text-align: center;
+    }
+}
+@media screen and (max-width: 535px) {
+    .subscribe__input{
+        max-width: 521px;
+        width: 100%;
+    }
+}
 /* Feedback */
 
 .feedback{
@@ -995,7 +1034,7 @@
     }
     
 }
-@media screen and (max-width: 1210px) {
+@media screen and (max-width: 1230px) {
     .feedback__body{
         grid-template-columns: 1fr auto 1fr;
         row-gap: 45px;
@@ -1039,7 +1078,7 @@
     background-color: #313030;
 }
 .footer{
-    padding-top: 9px;
+    padding-top: 10px;
     min-height: 111px;
     max-width: 1249px;
     margin: 0 auto;
@@ -1058,4 +1097,20 @@
 .social{
     display: flex;
     gap: 18px;
+}
+@media screen and (max-width: 1285px){
+    .footer{
+        padding-left: 2vw;
+        padding-right: 2vw;
+    }
+}
+@media screen and (max-width: 561px){
+    .footer{
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 10px;
+    }
+    .footer__text{
+        text-align: center;
+    }
 }
