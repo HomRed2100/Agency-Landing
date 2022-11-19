@@ -55,26 +55,33 @@
 .page__inner{
     display: block;
     width: 100%;
+    box-sizing: border-box;
 }
 .page__inner_intro{
     padding-top: 29px;
+
 }
 .page__inner_grey{
     background-color: #F6F2F2;
+
 }
 .page__inner_section{
     padding: 102px 0 110px;
+
 }
 .page__inner_dark{
     background-color: #2C2C2C;
+
 }
 .page__inner_subscribe{
     padding: 151px 0 142px;
     margin: 0;
     margin-top: 19px;
+
 }
 .page__header{
     margin: 0 auto;
+
 }
 .header{
     display: flex;
@@ -140,7 +147,7 @@
     overflow: hidden;
     padding: 0;
     position: absolute;
-    width: 1px;
+    max-width: 1px;
 }
 .intro__license-link{
     border: 0;
@@ -150,7 +157,7 @@
     overflow: hidden;
     padding: 0;
     position: absolute;
-    width: 1px;
+    max-width: 1px;
 }
 .intro{
     max-width: 1249px;
@@ -242,6 +249,13 @@
         height: auto;
     }
 }
+@media screen and (max-width: 400px) {
+    
+    .intro__heading{
+        font-size: 36px;
+    }
+    
+}
 
 /* Services */
 
@@ -252,8 +266,6 @@
     margin: 0 auto;
     justify-content: space-between;
     padding: 107px 0 55px;
-    border-bottom: 2px solid #ececec;
-    box-sizing: border-box;
 }
 .services__heading{
     max-width: 523px;
@@ -364,11 +376,20 @@
     }
 }
 /* Feature */
-
 .feature{
     padding: 98px 0 88px;
 }
 
+.line__long-grey{
+    max-width: 1249px;
+    height: 2px;
+    background-color: #ececec;
+    margin: 0 auto;
+    border: none;
+    position: relative;
+    bottom: 98px;
+    box-sizing: border-box;
+}
 .feature__header{
     margin: 0 auto;
 }
@@ -420,7 +441,7 @@
 .filter__list{
     margin: 0;
     padding: 0;
-    width: 912px;
+    max-width: 912px;
     list-style: none;
     display: flex;
     flex-wrap: wrap;
@@ -504,7 +525,6 @@
     margin: 0 auto;
     max-width: 1249px;
     padding: 5px 0 88px;
-
 }
 .team__heading{
     margin-bottom: 22px;
@@ -645,7 +665,7 @@
 @media screen and (max-width: 1256px) {
     .team{
         padding: 5px 2vw 88px;
-        box-sizing: border-box;
+        
     }
     .team__members{
         gap: 30px;
@@ -689,7 +709,7 @@
     }
     .team__leader-social{
         justify-content: center;
-        gap: 20px;
+        row-gap: 20px;
     }
     .team__others{
         grid-column: 1 / 2;
@@ -710,7 +730,6 @@
     padding: 151px 0 142px;
     margin: 0;
     margin-top: 19px;
-
 }
 .subscribe{
     max-width: 1249px;
@@ -794,7 +813,7 @@
     .subscribe__form{
         flex-direction: column;
         align-items: center;
-        gap: 40px;
+        row-gap: 40px;
     }
     .subscribe__heading{
         text-align: center;
@@ -808,6 +827,7 @@
 @media screen and (max-width: 790px) {
     .subscribe{
         padding: 0 2vw;
+        box-sizing: border-box;
     }
     .subscribe__text{
         text-align: center;
@@ -871,7 +891,7 @@
     grid-column: 5 / 6;
 }
 .feedback__form{
-    width: 731px;
+    max-width: 731px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -1054,7 +1074,7 @@
     }
     .feedback__name{
         width: 100%;
-        margin-right: none;
+        margin-right: 0;
     }
     .feedback__email{
         width: 100%;
@@ -1069,6 +1089,7 @@
 @media screen and (max-width: 420px){
     .feedback__body{
         padding: 0 2vw;
+        box-sizing: border-box;
     }
 }
 
@@ -1102,6 +1123,7 @@
     .footer{
         padding-left: 2vw;
         padding-right: 2vw;
+        box-sizing: border-box;
     }
 }
 @media screen and (max-width: 561px){
