@@ -103,14 +103,6 @@
     justify-content: space-between;
     margin-left: -20px;
 }
-@media screen and (max-width: 600px) {
-    .menu{
-        margin-left: 30px;
-    }
-    .menu__list{
-        justify-content: center;
-    }
-}
 .menu__item{
     display: flex;
     min-height: 89px;
@@ -133,6 +125,14 @@
 }
 .menu__link_active{
     background-color: #FF3F40;
+}
+@media screen and (max-width: 600px) {
+    .menu{
+        margin-left: 30px;
+    }
+    .menu__list{
+        justify-content: center;
+    }
 }
 
 /* Main */
@@ -250,11 +250,9 @@
     }
 }
 @media screen and (max-width: 400px) {
-    
     .intro__heading{
         font-size: 36px;
     }
-    
 }
 
 /* Services */
