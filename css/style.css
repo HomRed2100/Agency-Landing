@@ -44,6 +44,7 @@
     scroll-behavior: smooth;
 }
 .page{
+    --accent-color: #FF3F40;
     font-family: 'Open Sans', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -121,10 +122,10 @@
     padding-top: 8px;
 }
 .menu__link:hover{
-    background-color: #FF3F40;
+    background-color: var(--accent-color);
 }
 .menu__link_active{
-    background-color: #FF3F40;
+    background-color: var(--accent-color);
 }
 @media screen and (max-width: 600px) {
     .menu{
@@ -556,7 +557,7 @@
     gap: 60px;
 }
 .team__leader{
-    background-color: #FF3F40;
+    background-color: var(--accent-color);
     object-fit: contain;
     object-position: bottom;
     grid-column: 1 / 2;
@@ -607,7 +608,7 @@
     color: #000000;
 }
 .team__social-link:hover{
-    color: #FF3F40;
+    color: var(--accent-color);
 }
 .team__others{
     display: flex;
@@ -624,7 +625,7 @@
     display: flex;
 }
 .team__profile{
-    background-color: #FF3F40;
+    background-color: var(--accent-color);
     object-fit: contain;
     object-position: bottom;
 
