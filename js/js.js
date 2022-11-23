@@ -1,3 +1,5 @@
+'use strict';
+
 let all = document.querySelector('.filter__link_all');
 let printTemplate = document.querySelector('.filter__link_print');
 let webTemplate = document.querySelector('.filter__link_web');
@@ -17,14 +19,12 @@ userInt.addEventListener('click', showUserItem);
 mockUp.addEventListener('click', showMockItem);
 
 function showAllItem(evt){
-    console.log(evt);
     evt.preventDefault();
     allItem.forEach(function(allItem){
         allItem.classList.add('feature__product_visible');
     });
 }
 function showPrintItem(evt){
-    console.log(evt);
     evt.preventDefault();
     printItem.forEach(function(printItem){
         printItem.classList.toggle('feature__product_hidden');
@@ -33,7 +33,6 @@ function showPrintItem(evt){
     printTemplate.classList.toggle('filter__link_red');
 }
 function showWebItem(evt){
-    console.log(evt);
     evt.preventDefault();
     webItem.forEach(function(webItem){
         webItem.classList.toggle('feature__product_hidden');
@@ -42,7 +41,6 @@ function showWebItem(evt){
     webTemplate.classList.toggle('filter__link_red');
 }
 function showUserItem(evt){
-    console.log(evt);
     evt.preventDefault();
     userItem.forEach(function(userItem){
         userItem.classList.toggle('feature__product_hidden');
@@ -51,7 +49,6 @@ function showUserItem(evt){
     userInt.classList.toggle('filter__link_red');
 }
 function showMockItem(evt){
-    console.log(evt);
     evt.preventDefault();
     mockItem.forEach(function(mockItem){
         mockItem.classList.toggle('feature__product_hidden');
@@ -59,3 +56,13 @@ function showMockItem(evt){
     all.classList.toggle('filter__link_black');
     mockUp.classList.toggle('filter__link_red');
 }
+
+let menuWrapper = document.querySelector('.popup-menu');
+let menuButton = document.querySelector('.popup-menu__button');
+let menuList = document.querySelector('.popup-menu__list');
+
+function showMenu (){
+    menuList.classList.toggle('hide');
+}
+
+menuButton.addEventListener('click', showMenu);
