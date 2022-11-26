@@ -547,6 +547,10 @@
     object-fit: cover;
     flex: 1 1;
 }
+.feature__product:hover{
+    transform: scale(1.2);
+    transition: transform 0.5s ease-in-out;
+}
 
 .feature__product_hidden{
     display: none;
