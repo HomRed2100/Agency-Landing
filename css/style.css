@@ -547,10 +547,6 @@
     object-fit: cover;
     flex: 1 1;
 }
-.feature__product:hover{
-    transform: scale(1.2);
-    transition: transform 0.5s ease-in-out;
-}
 
 .feature__product_hidden{
     display: none;
@@ -564,10 +560,19 @@
 .filter__link_red{
     color: #FF2D2D;
 }
+
+@media screen and (min-width: 1320px){
+    .feature__product:hover{
+        transform: scale(1.2);
+        transition: transform 0.5s ease-in-out;
+    }
+
+}
 @media screen and (max-width: 1300px){
     .feature{
         padding: 98px 2vw 88px
     }
+
 }
 @media screen and (max-width: 1248px){
     .feature__heading{
