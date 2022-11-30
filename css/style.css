@@ -724,6 +724,8 @@
     background-color: rgba(0, 0, 0, 0.5);
     text-align: center;
     padding: 10px 0;
+    min-height: 37px;
+    box-sizing: border-box;
 }
 .team__other:hover > .team__other-name{
     display: block;
@@ -735,7 +737,7 @@
         transform: scaleY(0);
     }
     100% {
-        transform: scaleY(37px);
+        transform: scaleY(1);
     }
 }
 @media screen and (max-width: 1256px) {
