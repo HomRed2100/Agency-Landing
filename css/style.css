@@ -344,7 +344,6 @@
 
 .services{
     display: flex;
-    flex-wrap: wrap;
     max-width: 1249px;
     margin: 0 auto;
     justify-content: space-between;
@@ -451,6 +450,22 @@
 @media screen and (max-width: 1270px) {
     .services{
         padding: 107px 2vw 55px;
+    }
+}
+@media screen and (max-width: 1220px) {
+    .services{
+        column-gap: 20px;
+    }
+}
+@media screen and (max-width: 1040px) {
+    .services{
+        flex-wrap: wrap;
+    }
+    .services__info{
+        max-width: 800px;
+    }
+    .services__text{
+        max-width: 800px;
     }
 }
 @media screen and (max-width: 635px) {
