@@ -231,7 +231,6 @@
 .intro{
     max-width: 1249px;
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     margin: 0 auto;
 }
@@ -318,6 +317,23 @@
         height: auto;
     }
 }
+@media screen and (max-width: 1160px) {
+    .intro{
+        column-gap: 30px;
+    }
+}
+@media screen and (max-width: 900px) {
+    .intro{
+        flex-wrap: wrap;
+    }
+    .intro__info{
+        max-width: 800px;
+    }
+    .intro__text{
+        max-width: 800px;
+    }
+}
+
 @media screen and (max-width: 400px) {
     .intro__heading{
         font-size: 36px;
