@@ -1152,7 +1152,7 @@
 }
 @media screen and (max-width: 1230px) {
     .feedback__body{
-        grid-template-columns: 1fr auto 1fr;
+        grid-template-columns: 1fr 731px 1fr;
         row-gap: 45px;
     }
     .feedback__body::after{
@@ -1166,7 +1166,8 @@
     .feedback__contacts{
         width: 100%;
         grid-column: 2 / 3;
-        width: auto;
+        max-width: 731px;
+        box-sizing: border-box;
     }
     .feedback__name{
         width: 100%;
@@ -1180,6 +1181,11 @@
     }
     .feedback__button{
         width: 100%;
+    }
+}
+@media screen and (max-width: 775px){
+    .feedback__body{
+        grid-template-columns: 1fr auto 1fr;
     }
 }
 @media screen and (max-width: 420px){
